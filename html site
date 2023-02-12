@@ -51,5 +51,4 @@ docker push devopseasylearning2021/tia:httpd
 Access Application locally
 
 
-http://<IP>:8030/
-http://3.231.244.225:8030/
+#This is the end
