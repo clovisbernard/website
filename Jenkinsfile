@@ -1,11 +1,11 @@
 pipeline {
     agent any
 
-    tools {
-        // Define tool name and version
-        maven 'Maven3'
-        jdk 'JDK8'
-    }
+    // tools {
+    //     // Define tool name and version
+    //     maven 'Maven3'
+    //     jdk 'JDK8'
+    // }
 
     stages {
         stage('Checkout') {
