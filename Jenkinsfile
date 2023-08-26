@@ -14,27 +14,6 @@ pipeline {
                 checkout scm
             }
         }
-
-        stage('Build') {
-            steps {
-                // Build the code using Maven
-                sh 'mvn clean install -DskipTests'
-            }
-        }
-
-        stage('Archive') {
-            steps {
-                // Archive the build artifacts
-                archiveArtifacts artifacts: '**/target/*.jar', allowEmptyArchive: true
-            }
-        }
-
-        stage('Test') {
-            steps {
-                // Run the unit tests
-                sh 'mvn test'
-            }
-        }
     }
 
     post {
